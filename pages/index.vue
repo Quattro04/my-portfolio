@@ -1,32 +1,48 @@
 <template>
-    <div>
-        <h1 class="ml-64 text-7xl text-white tracking-widest">Matija Jeras</h1>
-        <h2 class="ml-64 mt-4 pl-1 text-xl text-white tracking-wider">Software developer with passion for front-end</h2>
-        <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
-            <img id="logo" class="next-particle hidden"
-                data-init-position="random"
-                data-init-direction="random"
-                data-fade-position="random"
-                data-fade-direction="random"
+    <div class="mx-auto mb-auto mt-64 xl:mr-auto xl:ml-0">
+        <h1 class="xl:ml-64 text-4xl xl:text-7xl text-white tracking-widest text-center">Matija Jeras</h1>
+        <h2 class="xl:ml-64 mt-4 pl-1 xl:text-xl text-white tracking-wider px-3 text-center">Software developer with passion for front-end</h2>
+    </div>
+    <div class="absolute left-1/2 top-28 xl:top-1/2 xl:left-auto xl:right-0 transform -translate-x-1/2 xl:-translate-y-1/2 xl:translate-x-0">
+        <img v-if="isDesktop" id="logo" class="next-particle hidden"
+            data-init-position="random"
+            data-init-direction="random"
+            data-fade-position="random"
+            data-fade-direction="random"
 
-                data-particle-gap="2"
+            data-particle-gap="2"
 
-                data-width="900"
-                data-height="700"
+            data-width="900"
+            data-height="700"                
 
-                data-max-width="700"
-                data-max-height="500"                    
+            data-mouse-force="60"
 
-                data-mouse-force="60"
+            data-gravity="0.3"
 
-                data-gravity="0.3"
+            data-noise="40"
+            src="/logo_white_square.png"
+            data-not-lazy
+        />
+        <img v-if="!isDesktop" id="logo" class="next-particle hidden"
+            data-init-position="random"
+            data-init-direction="random"
+            data-fade-position="random"
+            data-fade-direction="random"
 
-                data-noise="40"
-                src="/logo_white_square.png"
-                data-not-lazy
-            />
-        </div>
-  </div>
+            data-particle-gap="2"
+
+            data-width="300"
+            data-height="200"                
+
+            data-mouse-force="60"
+
+            data-gravity="0.3"
+
+            data-noise="40"
+            src="/logo_white_square.png"
+            data-not-lazy
+        />
+    </div>
 </template>
 <script setup>
     useHead({
@@ -35,7 +51,7 @@
             { href: 'https://fonts.gstatic.com', rel: 'preconnect', crossorigin: true },
             { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Varela+Round&display=swap', rel: 'stylesheet' },
         ],
-        script: [{ src: "/nextparticle.js", type: "text/javascript", async: true, nonce: true }],
+        script: [{ src: "/nextparticle.js", type: "text/javascript" }],
     });
 </script>
 <script>
@@ -44,6 +60,14 @@ export default {
         return {
             isLoaded: false
         }
+    },
+    computed: {
+        isDesktop() {
+            if (typeof window === 'undefined') {
+                return false;
+            }
+            return window.innerWidth > 1279;
+        }  
     },
     mounted() {
         new NextParticle(document.all.logo);
