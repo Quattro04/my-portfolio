@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="flex flex-1 w-full pb-20 px-32 h-full">
-        <VueWordCloud :words="words" :spacing="1"/>
+        <VueWordCloud :words="words" :spacing="1" />
     </div>
 </template>
 <script>

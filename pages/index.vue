@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto mb-auto mt-64 xl:mr-auto xl:ml-0">
+    <div class="mx-auto mb-auto mt-64 xl:mr-auto xl:ml-0 xl:mt-auto">
         <h1 class="xl:ml-64 text-4xl xl:text-7xl text-white tracking-widest text-center">Matija Jeras</h1>
         <h2 class="xl:ml-64 mt-4 pl-1 xl:text-xl text-white tracking-wider px-3 text-center">Software developer with passion for front-end</h2>
     </div>
@@ -44,16 +44,6 @@
         />
     </div>
 </template>
-<script setup>
-    useHead({
-        link: [
-            { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
-            { href: 'https://fonts.gstatic.com', rel: 'preconnect', crossorigin: true },
-            { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Varela+Round&display=swap', rel: 'stylesheet' },
-        ],
-        script: [{ src: "/nextparticle.js", type: "text/javascript" }],
-    });
-</script>
 <script>
 export default {
     data() {
