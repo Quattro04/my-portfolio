@@ -1,6 +1,6 @@
 <template>
     <nav class="w-full h-24 justify-around xl:justify-center flex text-md text-white no-print">
-        <NuxtLink to="/" class="router-link flex items-center xl:px-10 tracking-wide"><span>HOME</span></NuxtLink>
+        <a href="/" class="router-link flex items-center xl:px-10 tracking-wide"><span>HOME</span></a>
         <NuxtLink to="/skills" class="router-link flex items-center xl:px-10 tracking-wide"><span>SKILLS</span></NuxtLink>
         <NuxtLink to="/about" class="router-link flex items-center xl:px-10 tracking-wide"><span>ABOUT</span></NuxtLink>
         <!-- <NuxtLink to="/blog" class="link px-10">Blog</NuxtLink> -->
