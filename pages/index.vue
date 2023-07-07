@@ -1,70 +1,81 @@
 <template>
-    <div class="mx-auto mb-auto mt-64 xl:mr-auto xl:ml-0 xl:mt-auto">
-        <h1 class="xl:ml-64 text-4xl xl:text-7xl text-white tracking-widest text-center">Matija Jeras</h1>
-        <h2 class="xl:ml-64 mt-4 pl-1 xl:text-xl text-white tracking-wider px-3 text-center">Software developer with passion for front-end</h2>
+    <div class="flex flex-col">
+        <h1 class="font-bold tracking-wide text-3xl">MATIJA JERAS</h1>
+        <h2 class="font-medium text-sm text-zinc-500 ml-0.5 mt-2">Frontend developer with a passion for clean and intuitive design</h2>
     </div>
-    <div class="absolute left-1/2 top-28 xl:top-1/2 xl:left-auto xl:right-0 transform -translate-x-1/2 xl:-translate-y-1/2 xl:translate-x-0">
-        <img v-if="isDesktop" id="logo" class="next-particle hidden"
-            data-init-position="random"
-            data-init-direction="random"
-            data-fade-position="random"
-            data-fade-direction="random"
-
-            data-particle-gap="2"
-
-            data-width="900"
-            data-height="700"                
-
-            data-mouse-force="60"
-
-            data-gravity="0.3"
-
-            data-noise="40"
-            src="/logo_white_square.png"
-            data-not-lazy
-        />
-        <img v-if="!isDesktop" id="logo" class="next-particle hidden"
-            data-init-position="random"
-            data-init-direction="random"
-            data-fade-position="random"
-            data-fade-direction="random"
-
-            data-particle-gap="2"
-
-            data-width="300"
-            data-height="200"                
-
-            data-mouse-force="60"
-
-            data-gravity="0.3"
-
-            data-noise="40"
-            src="/logo_white_square.png"
-            data-not-lazy
-        />
+    <div class="flex flex-col">
+        <div class="flex items-center">
+            <h3 class="font-bold my-10 tracking-wide text-lg">SKILLS</h3>
+            <span class="flex-1 h-px ml-10 opacity-10 bg-black"></span>
+        </div>
+        <div class="flex">
+            <skill-card title="Next.js">
+                <svg width="90px" height="90px" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid"><g><path d="M119.616813,0.0688905149 C119.066276,0.118932037 117.314565,0.294077364 115.738025,0.419181169 C79.3775171,3.69690087 45.3192571,23.3131775 23.7481916,53.4631946 C11.7364614,70.2271045 4.05395894,89.2428829 1.15112414,109.384595 C0.12512219,116.415429 0,118.492153 0,128.025062 C0,137.557972 0.12512219,139.634696 1.15112414,146.665529 C8.10791789,194.730411 42.3163245,235.11392 88.7116325,250.076335 C97.0197458,252.753556 105.778299,254.580072 115.738025,255.680985 C119.616813,256.106338 136.383187,256.106338 140.261975,255.680985 C157.453763,253.779407 172.017986,249.525878 186.382014,242.194795 C188.584164,241.068861 189.00958,240.768612 188.709286,240.518404 C188.509091,240.36828 179.124927,227.782837 167.86393,212.570214 L147.393939,184.922273 L121.743891,146.965779 C107.630108,126.098464 96.0187683,109.034305 95.9186706,109.034305 C95.8185728,109.009284 95.7184751,125.873277 95.6684262,146.465363 C95.5933529,182.52028 95.5683284,183.971484 95.1178886,184.82219 C94.4672532,186.048207 93.9667644,186.548623 92.915738,187.099079 C92.114956,187.499411 91.4142717,187.574474 87.6355816,187.574474 L83.3063539,187.574474 L82.1552297,186.848872 C81.4044966,186.373477 80.8539589,185.747958 80.4785924,185.022356 L79.9530792,183.896422 L80.0031281,133.729796 L80.0782014,83.5381493 L80.8539589,82.5623397 C81.25435,82.0369037 82.1051808,81.3613431 82.7057674,81.0360732 C83.7317693,80.535658 84.1321603,80.4856165 88.4613881,80.4856165 C93.5663734,80.4856165 94.4172043,80.6857826 95.7434995,82.1369867 C96.1188661,82.5373189 110.007429,103.454675 126.623656,128.650581 C143.239883,153.846488 165.962072,188.250034 177.122972,205.139048 L197.392766,235.839522 L198.418768,235.163961 C207.502639,229.259062 217.112023,220.852086 224.719453,212.09482 C240.910264,193.504394 251.345455,170.835585 254.848876,146.665529 C255.874878,139.634696 256,137.557972 256,128.025062 C256,118.492153 255.874878,116.415429 254.848876,109.384595 C247.892082,61.3197135 213.683675,20.9362052 167.288368,5.97379012 C159.105376,3.32158945 150.396872,1.49507389 140.637341,0.394160408 C138.234995,0.143952798 121.693842,-0.131275573 119.616813,0.0688905149 L119.616813,0.0688905149 Z M172.017986,77.4831252 C173.219159,78.0836234 174.195112,79.2345784 174.545455,80.435575 C174.74565,81.0861148 174.795699,94.9976579 174.74565,126.348671 L174.670577,171.336 L166.73783,159.17591 L158.780059,147.01582 L158.780059,114.313685 C158.780059,93.1711423 158.880156,81.2862808 159.030303,80.7108033 C159.430694,79.3096407 160.306549,78.2087272 161.507722,77.5581875 C162.533724,77.0327515 162.909091,76.98271 166.837928,76.98271 C170.541544,76.98271 171.19218,77.0327515 172.017986,77.4831252 Z" fill="#000000"></path></g></svg>
+            </skill-card>
+            <skill-card title="Nuxt.js">
+                <svg width="110px" height="110px" viewBox="0 0 32 32"><path d="M10.648,25.734a1.465,1.465,0,0,1-.157-.942H3.847L13.716,7.417l4.159,7.41,1.308-.976L15.076,6.467A1.752,1.752,0,0,0,13.7,5.56a1.531,1.531,0,0,0-1.343.924l-10,17.593a1.729,1.729,0,0,0-.087,1.656,1.526,1.526,0,0,0,1.456.706H12.1a1.523,1.523,0,0,1-1.456-.7Z" style="fill:#00c58e"/><path d="M29.636,24.112,21.589,9.823a1.692,1.692,0,0,0-1.351-.907,1.489,1.489,0,0,0-1.308.907l-1.064,1.7v3.3l2.371-4.071,7.951,14.071H25.163a1.377,1.377,0,0,1-.122.837l-.026.052a1.729,1.729,0,0,1-1.456.732h4.734a1.72,1.72,0,0,0,1.456-.732,1.548,1.548,0,0,0-.122-1.6Z" style="fill:#108775"/><path d="M25.233,25.7l.026-.052.07-.139a1.278,1.278,0,0,0,.061-.7,2.11,2.11,0,0,0-.27-.724l-6.286-10.9-.95-1.656h-.017l-.959,1.648-6.277,10.9a2.18,2.18,0,0,0-.244.715,1.438,1.438,0,0,0,.148.942,1.563,1.563,0,0,0,1.482.7H23.725a1.79,1.79,0,0,0,1.508-.741ZM17.866,14.836,23.62,24.8H12.112Z" style="fill:#2f495e"/></svg>
+            </skill-card>
+            <skill-card title="Tailwind css">
+                <svg width="100px" height="100px" viewBox="0 -51 256 256" version="1.1" preserveAspectRatio="xMidYMid"><defs><linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1"><stop stop-color="#2298BD" offset="0%"></stop><stop stop-color="#0ED7B5" offset="100%"></stop></linearGradient></defs><g><path d="M128,-1.0658141e-14 C93.8666667,-1.0658141e-14 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,-1.0658141e-14 128,-1.0658141e-14 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z" fill="url(#linearGradient-1)"></path></g></svg>
+            </skill-card>
+            <skill-card title="Testing">
+                <svg height="80px" width="80px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve"><g fill="#a91f75"><path class="st0" d="M424.712,0c-13.927-0.017-25.211,11.233-25.228,25.16c-0.016,13.91,11.25,25.193,25.16,25.21c13.91,0.017,25.203-11.25,25.219-25.169C449.872,11.292,438.622,0.009,424.712,0z"/><path class="st0" d="M429.087,120.032c0.008-8.193-6.614-14.823-14.789-14.832c-8.192-0.008-14.83,6.622-14.839,14.806c0,8.183,6.63,14.822,14.806,14.822C422.457,134.846,429.087,128.208,429.087,120.032z"/><path class="st0" d="M461.241,65.304c-9.781-0.026-17.736,7.888-17.736,17.668c-0.018,9.797,7.913,17.711,17.702,17.736c9.764,0,17.719-7.906,17.719-17.694C478.942,73.242,471.02,65.304,461.241,65.304z"/><path class="st0" d="M78.238,395.333c-19.712,19.713-19.712,51.782,0,71.494c19.713,19.713,51.79,19.713,71.503,0l146.434-146.434H153.186L78.238,395.333z"/><path class="st0" d="M332.374,121.181c-11.934-11.943-31.36-11.943-43.294,0c-7.72,7.72-10.439,18.564-8.175,28.496l-1.96,1.968L56.752,373.839c-31.57,31.562-31.57,82.921,0,114.483c31.554,31.571,82.922,31.571,114.476,0l222.201-222.193l1.96-1.96c9.932,2.264,20.785-0.456,28.505-8.175c11.934-11.943,11.943-31.36,0-43.294L332.374,121.181z M381.832,257.159l-57.474,57.482L160.957,478.043c-25.946,25.937-67.99,25.937-93.935,0c-25.928-25.937-25.928-67.989,0-93.927l162.599-162.598l58.293-58.277l2.787-2.804c0.388,0.422,0.778,0.828,1.182,1.232l91.52,91.52c0.397,0.405,0.81,0.794,1.225,1.182L381.832,257.159zM413.606,245.715c-4.333,4.333-10.524,5.667-16.014,4.021l-4.164-4.164l-93.926-93.926l-4.164-4.164c-1.656-5.49-0.312-11.689,4.02-16.022c6.276-6.275,16.461-6.275,22.736,0l91.511,91.51C419.889,229.254,419.889,239.432,413.606,245.715z"/></g></svg>
+            </skill-card>
+            <skill-card title="Photoshop">
+                <svg width="80px" height="80px" viewBox="0 123.30600000000001 595.279 595.279"><radialGradient id="a" cx="-183.69" cy="328.972" r=".76" gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#34364e" stop-opacity=".98"/><stop offset="1" stop-color="#0c0824"/></radialGradient><path d="M24.803 155.549h545.674v530.792H24.803V155.549z" fill="url(#a)"/><path d="M24.803 155.549h545.674v530.792H24.803V155.549zM0 711.145h595.28V130.746H0v580.399zm401.318-342.287c-19.595 0-26.291 9.921-26.291 18.106 0 8.929 4.464 15.13 30.756 28.772 38.941 18.851 51.095 36.957 51.095 63.497 0 39.685-30.26 61.016-71.186 61.016-21.579 0-40.182-4.465-50.847-10.665-1.736-.744-1.984-1.984-1.984-3.969v-36.461c0-2.48 1.24-3.225 2.977-1.984 15.626 10.17 33.484 14.634 49.854 14.634 19.595 0 27.78-8.185 27.78-19.347 0-8.929-5.705-16.866-30.757-29.764-35.221-16.866-49.854-33.98-49.854-62.504 0-31.997 25.052-58.536 68.457-58.536 21.331 0 36.213 3.225 44.398 6.945 1.984 1.24 2.48 3.224 2.48 4.96v33.98c0 1.984-1.24 3.225-3.721 2.48-10.913-6.943-27.035-11.16-43.157-11.16zm-213.309 29.516c5.705.496 10.17.496 20.091.496 29.021 0 56.304-10.169 56.304-49.606 0-31.5-19.595-47.375-52.583-47.375-9.921 0-19.347.496-23.812.744v95.741zM143.86 266.668c0-1.736 3.473-2.977 5.456-2.977 15.875-.744 39.438-1.24 63.993-1.24 68.705 0 95.492 37.701 95.492 85.82 0 63-45.638 90.036-101.693 90.036-9.425 0-12.649-.496-19.347-.496v95.245c0 1.984-.744 2.976-2.976 2.976h-37.949c-1.984 0-2.977-.744-2.977-2.976V266.668z" fill="#31c5f0"/></svg>
+            </skill-card>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <div class="flex items-center">
+            <h3 class="font-bold my-10 tracking-wide text-lg">EXPERIENCE</h3>
+            <span class="flex-1 h-px ml-10 opacity-10 bg-black"></span>
+        </div>
+        <div class="flex">
+            <experience-card company="Oryx d.o.o." position="Junior frontend developer" duration="2017 - 2019" queue="2">
+                <div class="flex flex-col">
+                    <span class="text-sm">Developing websites for online casinos, maintaining and upgrading custom CMS.</span>
+                    <span class="text-sm text-zinc-400 ml-2 mt-2">- Vanilla HTML, CSS and JS</span>
+                    <span class="text-sm text-zinc-400 ml-2">- Vue.js</span>
+                    <span class="text-sm text-zinc-400 ml-2">- Laravel</span>
+                </div>
+            </experience-card>
+            <experience-card company="1Home d.o.o." position="Fullstack developer" duration="2019 - 2021" queue="4">
+                <div class="flex flex-col">
+                    <span class="text-sm">Providing the bridge between smart homes and home assistants with Raspberry Pi and developing web app for configuring those.</span>
+                    <span class="text-sm text-zinc-400 ml-2 mt-2">- Vue.js</span>
+                    <span class="text-sm text-zinc-400 ml-2">- Node.js GoLang</span>
+                    <span class="text-sm text-zinc-400 ml-2">- MongoDB</span>
+                </div>
+            </experience-card>
+            <experience-card company="Endava d.o.o." position="Senior frontend developer" duration="2021 - 2022" queue="6">
+                <div class="flex flex-col">
+                    <span class="text-sm">Agency work on 2 different projects:</span>
+                    <span class="text-sm ml-2 mt-2">- Dashboard development and data visualization for different devices in <span class="text-zinc-400">Angular</span>.</span>
+                    <span class="text-sm ml-2">- Rewriting fashion clothing store from <span class="text-zinc-400">Angular</span> to <span class="text-zinc-400">Next.js</span> to improve SEO and overall performance.</span>
+                </div>
+            </experience-card>
+            <experience-card company="Bragg d.o.o." position="Senior frontend developer" duration="2022 - Present" queue="8">
+                <div class="flex flex-col">
+                    <span class="text-sm">Implementing new frontend from scratch for online casinos.</span>
+                    <span class="text-sm text-zinc-400 ml-2 mt-2">- Next.js</span>
+                    <span class="text-sm text-zinc-400 ml-2">- NX</span>
+                </div>
+            </experience-card>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <div class="flex items-center">
+            <h3 class="font-bold my-10 tracking-wide text-lg">EDUCATION</h3>
+            <span class="flex-1 h-px ml-10 opacity-10 bg-black"></span>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-zinc-700 text-sm font-semibold">Bachelor's degree in Computer Science</span>
+            <span class="text-zinc-700 text-sm mt-2">at Faculty of Computer and Information Science (Fakulteta za računalništvo in informatiko)</span>
+            <span class="text-xs text-zinc-400 mt-3">2013 - 2017</span>
+        </div>
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            isLoaded: false
-        }
-    },
-    computed: {
-        isDesktop() {
-            if (typeof window === 'undefined') {
-                return false;
-            }
-            return window.innerWidth > 1279;
-        }  
-    },
-    mounted() {
-        new NextParticle(document.all.logo);
-    }
-}
-</script>
-
 <style lang="css">
 body {
     font-family: 'Poppins', sans-serif;

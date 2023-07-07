@@ -1,14 +1,26 @@
 <template>
-    <nav class="w-full h-24 justify-around xl:justify-center flex text-md text-white no-print">
-        <NuxtLink to="/" class="router-link flex items-center xl:px-10 tracking-wide"><span>HOME</span></NuxtLink>
-        <NuxtLink to="/skills" class="router-link flex items-center xl:px-10 tracking-wide"><span>SKILLS</span></NuxtLink>
-        <NuxtLink to="/about" class="router-link flex items-center xl:px-10 tracking-wide"><span>ABOUT</span></NuxtLink>
-        <!-- <NuxtLink to="/blog" class="link px-10">Blog</NuxtLink> -->
-        <NuxtLink to="/cv" class="router-link flex items-center xl:px-10 tracking-wide"><span>CV</span></NuxtLink>
+    <nav class="flex flex-col w-full px-14 font-semibold text-sm text-zinc-700">
+        <NuxtLink to="/" class="router-link flex items-center justify-center m-3 py-5 rounded-xl">
+            <span>Home</span>
+        </NuxtLink>
+        <NuxtLink to="/skills" class="router-link flex items-center justify-center m-3 py-5 rounded-xl">
+            <span>Skills</span>
+        </NuxtLink>
+        <NuxtLink to="/about" class="router-link flex items-center justify-center m-3 py-5 rounded-xl">
+            <span>About</span>
+        </NuxtLink>
+        <NuxtLink to="/cv" class="router-link flex items-center justify-center m-3 py-5 rounded-xl">
+            <span>CV</span>
+        </NuxtLink>
     </nav>
 </template>
 <style>
-.router-link span {
+.router-link {
+    transition: 0.5s linear;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* .router-link span {
     transition: 0.5s;
 }
 .router-link:hover span {
@@ -17,5 +29,5 @@
 .router-link-active {
     opacity: 0.4;
     pointer-events: none;
-}
+} */
 </style>
