@@ -1,5 +1,5 @@
 <template>
-    <div class="cont flex flex-col my-10 py-6 px-8 rounded-xl">
+    <div class="cont flex flex-col xl:my-10 py-3 px-4 mx-3 xl:py-6 xl:px-8 rounded-xl">
         <div class="flex items-center justify-between">
             <div class="flex items-center">
                 <i class="w-3 h-3 bg-teal-300 mr-2 border border-black"></i>
@@ -14,11 +14,11 @@
                 <span class="text-slate-200">Other</span>
             </div>
         </div>
-        <div class="text-slate-200 mt-2">
+        <div class="text-slate-200 mt-2 text-center">
             Larger font means more experience with that technology
         </div>
     </div>
-    <div class="flex flex-1 w-full pb-20 px-32 h-full">
+    <div class="flex flex-1 w-full py-3 px-4 xl:pb-20 xl:px-32 h-full">
         <VueWordCloud :words="words" :spacing="1" />
     </div>
 </template>
