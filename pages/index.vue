@@ -57,9 +57,10 @@
             </experience-card>
             <experience-card company="Bragg d.o.o." position="Senior frontend developer" duration="2022 - Present" queue="8">
                 <div class="flex flex-col">
-                    <span class="text-sm">Implementing new frontend from scratch for online casinos.</span>
-                    <span class="text-sm text-zinc-400 ml-2 mt-2">- Next.js</span>
-                    <span class="text-sm text-zinc-400 ml-2">- NX</span>
+                    <span class="text-sm">Implementing new frontend for online casinos from scratch in Next.js - near 100% integration and e2e test coverage.</span>
+                    <span class="text-sm text-zinc-400 ml-2 mt-2">- Next.js + NX</span>
+                    <span class="text-sm text-zinc-400 ml-2">- Jest & React Testing Lib</span>
+                    <span class="text-sm text-zinc-400 ml-2">- Cypress (e2e testing)</span>
                 </div>
             </experience-card>
         </div>
