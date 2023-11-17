@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex flex-col w-full px-14 font-semibold text-sm text-zinc-700">
+    <nav class="flex flex-col w-full px-5 font-semibold text-sm text-zinc-700">
         <NuxtLink to="/" class="router-link flex items-center justify-center m-3 py-5 rounded-xl">
             <span>Home</span>
         </NuxtLink>

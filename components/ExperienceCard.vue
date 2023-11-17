@@ -3,7 +3,7 @@
         <template #front>
             <div :class="`
                 group
-                flex-1 flex flex-col h-44 py-8 px-10 mx-10 ml-0 rounded-xl bg-white
+                flex-1 flex flex-col h-44 py-8 px-10 m-5 rounded-xl bg-white
                 drop-shadow cursor-pointer relative overflow-hidden
             `">
                 <span class="uppercase font-semibold text-sky-700">
@@ -28,7 +28,7 @@
         </template>
         <template #back>
             <div :class="`
-                flex-1 flex flex-col h-44 py-4 px-4 mx-10 ml-0 rounded-xl bg-white
+                flex-1 flex flex-col h-44 py-4 px-4 m-5 rounded-xl bg-white
                 drop-shadow cursor-pointer relative overflow-hidden\
             `">
                 <slot />

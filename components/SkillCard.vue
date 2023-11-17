@@ -1,5 +1,5 @@
 <template>
-    <div class="group flex-[0_0_200px] flex flex-col h-48 mx-10 ml-0 rounded-xl bg-white drop-shadow cursor-pointer relative overflow-hidden">
+    <div class="group flex-[0_0_200px] flex flex-col h-48 m-5 rounded-xl bg-white drop-shadow cursor-pointer relative overflow-hidden">
         <div class="h-12 py-3 px-5 text-white text-center rounded-t-xl relative" :class="titleAsClass">
             <span class="flex items-center transition absolute top-1/2 left-0 transform -translate-x-full -translate-y-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2">
                 More info
